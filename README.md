@@ -64,7 +64,7 @@
     - 四项信息抽取任务联合建模，学习跨任务/实例/关系的依赖
     - 区别于OneIE，使用的全局特征由神经网络建模，而全局依赖作为一种正则损失加入到总损失中
     - 为了让全局特征能够对训练过程产生影响（这是OneIE没有考虑到的），设计了一套“近似+gumbel softmax”的方法来优化图
-- [x] **The Art of Prompting: Event Detection based on Type Specific Prompts**==(SOTA)==
+- [x] The Art of Prompting: Event Detection based on Type Specific Prompts
     - 探究了多种prompt方式对事件检测的影响
     - 探究3中setting下：supervised；few-shot；zero-shot
     - 模型结构简单，prompt与文本注意力交互，加一个分类头
@@ -77,6 +77,9 @@
     - 本文提出了一个方法衡量每个trigger word的显著性归因
     - 并基于显著性归因设计两个基于BERT的模型，最后ensemble
     - SOTA效果
+- [x] Treasures Outside Contexts: Improving Event Detection via Global Statistics
+    - 用全局统计co-occurence信息辅助进行触发词预测
+    - 为了丰富全局统计特征，使用一个临时任务来增加全局特征的维度
 
 ## 生成式模型
 
