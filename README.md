@@ -80,12 +80,15 @@
 - [x] Treasures Outside Contexts: Improving Event Detection via Global Statistics
     - 用全局统计co-occurence信息辅助进行触发词预测
     - 为了丰富全局统计特征，使用一个临时任务来增加全局特征的维度
-
 - [x] Self-Attention Graph Residual Convolutional Network for Event Detection with dependency relations
   - 基于依存句法树的图神经网络
   - 提出图残差网络和图上自注意力机制
   - <i>文章写的不是很清楚，没代码细节看不懂</i>
-
+- [x] Learning Prototype Representations Across Few-Shot Tasks for Event Detection
+    - 应用于Few-Shot场景
+    - 基于原型网络（Prototypical Netword）的方法很容易受到support set中异常数据的影响。因此本文利用跨任务的关系来实现鲁棒的few-shot分类器。
+    - 首先修改了prototype的计算方法，让两个包含相同事件类型的task互相影响，以减少某个task中离群点的影响（我认为这里的task指的是把一组 (N+1)-way K-shot的数据采样为两部分）
+    - 为了提高两个任务得到的模型预测的一致性，借助知识蒸馏的方法让两个得到的模型的预测分布尽量接近，用KL散度衡量。
 ## 生成式模型
 
 - [x] TANL
