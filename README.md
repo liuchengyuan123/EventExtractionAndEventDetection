@@ -89,6 +89,13 @@
     - 基于原型网络（Prototypical Netword）的方法很容易受到support set中异常数据的影响。因此本文利用跨任务的关系来实现鲁棒的few-shot分类器。
     - 首先修改了prototype的计算方法，让两个包含相同事件类型的task互相影响，以减少某个task中离群点的影响（我认为这里的task指的是把一组 (N+1)-way K-shot的数据采样为两部分）
     - 为了提高两个任务得到的模型预测的一致性，借助知识蒸馏的方法让两个得到的模型的预测分布尽量接近，用KL散度衡量。
+- [x] Lifelong Event Detection with Knowledge Transfer
+  - 本文研究的持续学习场景：随着时间继续，模型要学习预测新的事件类型，但是旧的事件类型不能丢失
+  - 使用最基础的基于span的预测框架
+  - 应用Experience Replay和Knowledge Distillation等技术学习新类型
+  - 用新类型调整旧类型的表达
+  - 用旧类型来更新新类型的表达，其中对于长尾部分的新类型提出了新的表示更新方式
+
 ## 生成式模型
 
 - [x] TANL
