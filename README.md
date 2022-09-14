@@ -80,6 +80,7 @@
 - [x] Treasures Outside Contexts: Improving Event Detection via Global Statistics
     - 用全局统计co-occurence信息辅助进行触发词预测
     - 为了丰富全局统计特征，使用一个临时任务来增加全局特征的维度
+- [ ] Honey or Poison? Solving the Trigger Curse in Few-shot Event Detection via Causal Intervention
 - [x] Self-Attention Graph Residual Convolutional Network for Event Detection with dependency relations
   - 基于依存句法树的图神经网络
   - 提出图残差网络和图上自注意力机制
