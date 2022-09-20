@@ -99,6 +99,10 @@
 - [x] EEGCN
     - 本文提出依存句法树上的边和点一样，也应该是动态变化的（contextualize），而不是与上下文无关的，因为在不同上下文中的相同依存关系可能表达的是不一样的事件关系。
     - 提出EEGCN，包括Node Aware Edge Update Module(NAEU)和Edge Aware Node Update Module(EANU)两个部分
+- [x] A Graph Convolutional Network with Adaptive Graph Generation and Channel Selection for Event Detection
+  - 很多之前的基于依存句法树的工作，生成图之后，图无法优化，并且图上表达的只有语法信息，没有语义信息
+  - 这篇工作提出使用自适应的建图方法，应用gumbel softmax trick，使得图可以梯度更新
+  - 另外提出MCG-GCN，让网络对不同的信息通道有不同的权重，并且加一个门限制某些信息流通
 
 ## 生成式模型
 
